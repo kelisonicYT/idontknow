@@ -224,7 +224,7 @@ class PauseSubState extends MusicBeatSubstate
 
 			switch (daSelected)
 			{
-				case "Resume":
+				case "Emm":
 					close();
 				case 'Change Difficulty':
 					menuItems = difficultyChoices;
@@ -234,7 +234,7 @@ class PauseSubState extends MusicBeatSubstate
 					PlayState.instance.practiceMode = !PlayState.instance.practiceMode;
 					PlayState.changedDifficulty = true;
 					practiceText.visible = PlayState.instance.practiceMode;
-				case "Restart Song":
+				case "What The":
 					restartSong();
 				case "Leave Charting Mode":
 					restartSong();
@@ -266,7 +266,7 @@ class PauseSubState extends MusicBeatSubstate
                                 case 'Chart Editor':
 		                        MusicBeatState.switchState(new editors.ChartingState());
 		                        PlayState.chartingMode = true;
-				case "Exit to menu":
+				case "Sigma":
 					PlayState.deathCounter = 0;
 					PlayState.seenCutscene = false;
 
